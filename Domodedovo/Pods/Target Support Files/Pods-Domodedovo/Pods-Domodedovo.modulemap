@@ -1,0 +1,6 @@
+framework module Pods_Domodedovo {
+  umbrella header "Pods-Domodedovo-umbrella.h"
+
+  export *
+  module * { export * }
+}
