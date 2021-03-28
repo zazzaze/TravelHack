@@ -8,6 +8,4 @@
 import Foundation
 
 class ServiceForm: Codable {
-    var id: Int64
-    var serviceFormPages: [ServiceFormPage]
 }

@@ -21,4 +21,22 @@ class ServerService {
             completion(json)
         }
     }
+    
+    func postRequest(request: ServiceRequest, completion: @escaping (_ isSuccess: Bool) -> ()) {
+        AF.request("\(Endpoints.book.url.absoluteString)\(request.serviceProviderHeader.bookingId)", method: .post).response { response in
+            if response.error != nil {
+                completion(false)
+            } else {
+                completion(true)
+            }
+        }
+    }
+    
+    public func registerService(request: ServiceRequest, completion: @escaping (_ isSuccess: Bool) -> ()) {
+        AF.request("\(Endpoints.book.url.absoluteString)/\(request.serviceProviderHeader.bookingId)", method: .put).response { response in
+            completion(response.error == nil)
+        }
+    }
+    
+    
 }

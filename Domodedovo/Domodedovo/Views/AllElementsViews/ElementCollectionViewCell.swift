@@ -69,17 +69,20 @@ class ElementCollectionViewCell: UICollectionViewCell {
             layer.borderColor = UIColor.lightGray.cgColor
             titleLabel.textColor = .lightGray
             burgerImage.tintColor = .lightGray
+            isUserInteractionEnabled = false
             statusImage.isHidden = true
         } else if state == .success {
             layer.borderColor = UIColor(named: "Main")?.cgColor
             titleLabel.textColor = UIColor(named: "Main")
             burgerImage.tintColor = UIColor(named: "Main")
             statusImage.isHidden = false
+            isUserInteractionEnabled = true
             statusImage.image = UIImage(named: "success")
         } else {
             layer.borderColor = UIColor(named: "Main")?.cgColor
             titleLabel.textColor = UIColor(named: "Main")
             burgerImage.tintColor = UIColor(named: "Main")
+            isUserInteractionEnabled = true
             statusImage.isHidden = true
         }
     }

@@ -113,8 +113,20 @@ extension AllElementsViewController: UICollectionViewDelegate {
 extension AllElementsViewController: ElementsFormDelegate {
     func nextViewButtonTapped() {
         if index + 1 == elements.count {
-            //TODO:Отправка на сервер
-            navigationController?.popToRootViewController(animated: true)
+            DispatchQueue.global(qos: .utility).async {
+                ServerService().postRequest(request: self.serviceRequest) { isSuccess in
+                    if isSuccess {
+                        ServerService().registerService(request: self.serviceRequest) { isSuccess in
+                            if isSuccess {
+                                BookIdData.shared.addId(self.serviceRequest.serviceProviderHeader.bookingId)
+                                self.navigationController?.pushViewController(OverviewViewController(), animated: true)
+                            }
+                        }
+                    } else {
+                        return
+                    }
+                }
+            }
             return
         }
         index += 1
@@ -125,6 +137,11 @@ extension AllElementsViewController: ElementsFormDelegate {
         newVC.elementsView?.delegate = self
         if index == elements.count - 1 {
             newVC.nextButtonTitle = "Отправить"
+        }
+        DispatchQueue.global(qos: .utility).async {
+            ServerService().postRequest(request: self.serviceRequest) { _ in
+                
+            }
         }
         navigationController?.pushViewController(newVC, animated: true)
     }

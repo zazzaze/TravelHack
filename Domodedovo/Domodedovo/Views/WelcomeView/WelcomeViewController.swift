@@ -66,13 +66,13 @@ class WelcomeViewController: UIViewController {
     }
     
     private func configureBookingButton() {
-        bookingButton.setTitle("Отменить бронирование", for: .normal)
+        bookingButton.setTitle("Мои бронирования", for: .normal)
         bookingButton.cornerRadius = 8
         bookingButton.translatesAutoresizingMaskIntoConstraints = false
         bookingButton.setTitleColor(UIColor(named: "Main"), for: .normal)
         bookingButton.setImage(UIImage(named: "tick"), for: .normal)
         bookingButton.imageRightPadding = 21
-        bookingButton.isEnabled = false
+        bookingButton.addTarget(self, action: #selector(openAllBooks), for: .touchUpInside)
         bookingButton.accessibilityLabel = "Кнопка отмены бронирования"
     }
     
@@ -142,5 +142,9 @@ class WelcomeViewController: UIViewController {
     
     @objc private func openServicesView() {
         navigationController?.pushViewController(ServicesViewController(), animated: true)
+    }
+    
+    @objc private func openAllBooks() {
+        navigationController?.pushViewController(AllBookingsViewController(), animated: true)
     }
 }
