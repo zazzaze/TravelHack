@@ -9,14 +9,11 @@
 /* Begin PBXBuildFile section */
 		74A7BA97260F13830041A18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BA96260F13830041A18A /* AppDelegate.swift */; };
 		74A7BA99260F13830041A18A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BA98260F13830041A18A /* SceneDelegate.swift */; };
-		74A7BA9B260F13830041A18A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BA9A260F13830041A18A /* ViewController.swift */; };
 		74A7BAA0260F13890041A18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A7BA9F260F13890041A18A /* Assets.xcassets */; };
 		74A7BAA3260F13890041A18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A7BAA1260F13890041A18A /* LaunchScreen.storyboard */; };
 		74A7BAAE260F1A190041A18A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BAAD260F1A190041A18A /* CustomButton.swift */; };
 		74A7BAB2260F1A820041A18A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A7BAB1260F1A820041A18A /* Colors.xcassets */; };
-		74A7BAB5260F2E5F0041A18A /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BAB4260F2E5F0041A18A /* FormTextField.swift */; };
 		74A7BB5B260F497D0041A18A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BB5A260F497D0041A18A /* WelcomeViewController.swift */; };
-		74A7BB5F260F4EBA0041A18A /* UIViewExtesnsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BB5E260F4EBA0041A18A /* UIViewExtesnsion.swift */; };
 		74A7BB64260F618D0041A18A /* ServiceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BB63260F618D0041A18A /* ServiceForm.swift */; };
 		74A7BB67260F61C60041A18A /* ServiceFormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BB66260F61C60041A18A /* ServiceFormPage.swift */; };
 		74A7BB6A260F62A80041A18A /* ServiceFormElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BB69260F62A80041A18A /* ServiceFormElement.swift */; };
@@ -30,6 +27,24 @@
 		74A7BB98260F77590041A18A /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BB97260F77590041A18A /* FormView.swift */; };
 		74A7BB9D260F7C960041A18A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BB9C260F7C960041A18A /* TextView.swift */; };
 		74A7BBA3260F7D450041A18A /* TextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBA2260F7D450041A18A /* TextBoxView.swift */; };
+		74A7BBBB260F81FE0041A18A /* FormElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBBA260F81FE0041A18A /* FormElementView.swift */; };
+		74A7BBC5260F8CF40041A18A /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBC4260F8CF40041A18A /* DateView.swift */; };
+		74A7BBC9260F8DB80041A18A /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBC8260F8DB80041A18A /* TimeView.swift */; };
+		74A7BBCD260F8F5B0041A18A /* TelephoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBCC260F8F5B0041A18A /* TelephoneView.swift */; };
+		74A7BBD2260FA3B10041A18A /* ElementsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBD1260FA3B10041A18A /* ElementsForm.swift */; };
+		74A7BBDE260FD2E70041A18A /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBDD260FD2E70041A18A /* Endpoints.swift */; };
+		74A7BBE4260FD3AF0041A18A /* ServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBE3260FD3AF0041A18A /* ServerService.swift */; };
+		74A7BBFE260FDDFC0041A18A /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BBFD260FDDFC0041A18A /* PickerView.swift */; };
+		74A7BC1C260FEAF20041A18A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A7BC1B260FEAF20041A18A /* Images.xcassets */; };
+		74A7BC20260FF4FA0041A18A /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC1F260FF4FA0041A18A /* CustomNavigationBar.swift */; };
+		74A7BC25260FFA780041A18A /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC24260FFA780041A18A /* ServicesViewController.swift */; };
+		74A7BC2A261004EA0041A18A /* ServiceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC29261004EA0041A18A /* ServiceEntity.swift */; };
+		74A7BC30261006A80041A18A /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC2F261006A80041A18A /* ServiceCollectionViewCell.swift */; };
+		74A7BC3526101E950041A18A /* AllElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC3426101E950041A18A /* AllElementsViewController.swift */; };
+		74A7BC3B26101FEC0041A18A /* ElementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC3A26101FEC0041A18A /* ElementCollectionViewCell.swift */; };
+		74A7BC402610240A0041A18A /* ElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC3F2610240A0041A18A /* ElementViewController.swift */; };
+		74A7BC4C26103C070041A18A /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC4B26103C060041A18A /* ServiceRequest.swift */; };
+		74A7BC5026103C4D0041A18A /* BookingFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A7BC4F26103C4D0041A18A /* BookingFee.swift */; };
 		F827DB51F10DFB160E0DEC1B /* Pods_Domodedovo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3988C05D4FE92A9B98A14638 /* Pods_Domodedovo.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,13 +63,11 @@
 		74A7BA93260F13830041A18A /* Domodedovo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Domodedovo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A7BA96260F13830041A18A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A7BA98260F13830041A18A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74A7BA9A260F13830041A18A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74A7BA9F260F13890041A18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74A7BAA2260F13890041A18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74A7BAA4260F13890041A18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74A7BAAD260F1A190041A18A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		74A7BAB1260F1A820041A18A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		74A7BAB4260F2E5F0041A18A /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		74A7BADC260F34520041A18A /* libMaterialComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMaterialComponents.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A7BADF260F34850041A18A /* libMDFInternationalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMDFInternationalization.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A7BAE0260F34850041A18A /* libMDFTextAccessibility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMDFTextAccessibility.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +87,6 @@
 		74A7BAEF260F34850041A18A /* MaterialIcons_ic_settings.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MaterialIcons_ic_settings.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A7BB17260F35950041A18A /* libMaterialComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMaterialComponents.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A7BB5A260F497D0041A18A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		74A7BB5E260F4EBA0041A18A /* UIViewExtesnsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtesnsion.swift; sourceTree = "<group>"; };
 		74A7BB63260F618D0041A18A /* ServiceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceForm.swift; sourceTree = "<group>"; };
 		74A7BB66260F61C60041A18A /* ServiceFormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFormPage.swift; sourceTree = "<group>"; };
 		74A7BB69260F62A80041A18A /* ServiceFormElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFormElement.swift; sourceTree = "<group>"; };
@@ -90,6 +102,24 @@
 		74A7BB97260F77590041A18A /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		74A7BB9C260F7C960041A18A /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		74A7BBA2260F7D450041A18A /* TextBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxView.swift; sourceTree = "<group>"; };
+		74A7BBBA260F81FE0041A18A /* FormElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormElementView.swift; sourceTree = "<group>"; };
+		74A7BBC4260F8CF40041A18A /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		74A7BBC8260F8DB80041A18A /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		74A7BBCC260F8F5B0041A18A /* TelephoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneView.swift; sourceTree = "<group>"; };
+		74A7BBD1260FA3B10041A18A /* ElementsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsForm.swift; sourceTree = "<group>"; };
+		74A7BBDD260FD2E70041A18A /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		74A7BBE3260FD3AF0041A18A /* ServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerService.swift; sourceTree = "<group>"; };
+		74A7BBFD260FDDFC0041A18A /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		74A7BC1B260FEAF20041A18A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74A7BC1F260FF4FA0041A18A /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		74A7BC24260FFA780041A18A /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		74A7BC29261004EA0041A18A /* ServiceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEntity.swift; sourceTree = "<group>"; };
+		74A7BC2F261006A80041A18A /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		74A7BC3426101E950041A18A /* AllElementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllElementsViewController.swift; sourceTree = "<group>"; };
+		74A7BC3A26101FEC0041A18A /* ElementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCollectionViewCell.swift; sourceTree = "<group>"; };
+		74A7BC3F2610240A0041A18A /* ElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementViewController.swift; sourceTree = "<group>"; };
+		74A7BC4B26103C060041A18A /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		74A7BC4F26103C4D0041A18A /* BookingFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFee.swift; sourceTree = "<group>"; };
 		7514699FA74419AEE55BE082 /* Pods-Domodedovo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domodedovo.debug.xcconfig"; path = "Target Support Files/Pods-Domodedovo/Pods-Domodedovo.debug.xcconfig"; sourceTree = "<group>"; };
 		752E8D0A170A02AF825464C0 /* Pods-Domodedovo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domodedovo.release.xcconfig"; path = "Target Support Files/Pods-Domodedovo/Pods-Domodedovo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,17 +175,19 @@
 		74A7BA95260F13830041A18A /* Domodedovo */ = {
 			isa = PBXGroup;
 			children = (
+				74A7BC28261004D60041A18A /* Entities */,
+				74A7BBDB260FD2CC0041A18A /* Services */,
 				74A7BB8F260F76D80041A18A /* ViewParser */,
 				74A7BB62260F617D0041A18A /* Form */,
 				74A7BB58260F495D0041A18A /* Views */,
 				74A7BAAC260F19CE0041A18A /* CustomViews */,
 				74A7BA96260F13830041A18A /* AppDelegate.swift */,
 				74A7BA98260F13830041A18A /* SceneDelegate.swift */,
-				74A7BA9A260F13830041A18A /* ViewController.swift */,
 				74A7BA9F260F13890041A18A /* Assets.xcassets */,
 				74A7BAA1260F13890041A18A /* LaunchScreen.storyboard */,
 				74A7BAA4260F13890041A18A /* Info.plist */,
 				74A7BAB1260F1A820041A18A /* Colors.xcassets */,
+				74A7BC1B260FEAF20041A18A /* Images.xcassets */,
 			);
 			path = Domodedovo;
 			sourceTree = "<group>";
@@ -163,9 +195,8 @@
 		74A7BAAC260F19CE0041A18A /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				74A7BB5D260F4EA80041A18A /* Extensions */,
 				74A7BAAD260F1A190041A18A /* CustomButton.swift */,
-				74A7BAB4260F2E5F0041A18A /* FormTextField.swift */,
+				74A7BC1F260FF4FA0041A18A /* CustomNavigationBar.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -173,6 +204,9 @@
 		74A7BB58260F495D0041A18A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74A7BC3E261023F10041A18A /* ElementView */,
+				74A7BC3326101E790041A18A /* AllElementsViews */,
+				74A7BC23260FF9FE0041A18A /* ServicesView */,
 				74A7BB96260F77450041A18A /* Form */,
 				74A7BB59260F49620041A18A /* WelcomeView */,
 			);
@@ -187,14 +221,6 @@
 			path = WelcomeView;
 			sourceTree = "<group>";
 		};
-		74A7BB5D260F4EA80041A18A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				74A7BB5E260F4EBA0041A18A /* UIViewExtesnsion.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		74A7BB62260F617D0041A18A /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +232,8 @@
 				74A7BB72260F68290041A18A /* ContentCategory.swift */,
 				74A7BB85260F69630041A18A /* ServiceRespond.swift */,
 				74A7BB89260F69810041A18A /* ServiceProviderHeader.swift */,
+				74A7BC4B26103C060041A18A /* ServiceRequest.swift */,
+				74A7BC4F26103C4D0041A18A /* BookingFee.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -230,6 +258,7 @@
 		74A7BB96260F77450041A18A /* Form */ = {
 			isa = PBXGroup;
 			children = (
+				74A7BBD0260FA2EE0041A18A /* ElementsForm */,
 				74A7BB9B260F7C810041A18A /* Elements */,
 				74A7BB97260F77590041A18A /* FormView.swift */,
 			);
@@ -239,10 +268,82 @@
 		74A7BB9B260F7C810041A18A /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				74A7BBFC260FDDDF0041A18A /* PickerView */,
 				74A7BB9C260F7C960041A18A /* TextView.swift */,
 				74A7BBA2260F7D450041A18A /* TextBoxView.swift */,
+				74A7BBBA260F81FE0041A18A /* FormElementView.swift */,
+				74A7BBC4260F8CF40041A18A /* DateView.swift */,
+				74A7BBC8260F8DB80041A18A /* TimeView.swift */,
+				74A7BBCC260F8F5B0041A18A /* TelephoneView.swift */,
 			);
 			path = Elements;
+			sourceTree = "<group>";
+		};
+		74A7BBD0260FA2EE0041A18A /* ElementsForm */ = {
+			isa = PBXGroup;
+			children = (
+				74A7BBD1260FA3B10041A18A /* ElementsForm.swift */,
+			);
+			path = ElementsForm;
+			sourceTree = "<group>";
+		};
+		74A7BBDB260FD2CC0041A18A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				74A7BBDC260FD2D20041A18A /* Server */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		74A7BBDC260FD2D20041A18A /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				74A7BBDD260FD2E70041A18A /* Endpoints.swift */,
+				74A7BBE3260FD3AF0041A18A /* ServerService.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		74A7BBFC260FDDDF0041A18A /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				74A7BBFD260FDDFC0041A18A /* PickerView.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		74A7BC23260FF9FE0041A18A /* ServicesView */ = {
+			isa = PBXGroup;
+			children = (
+				74A7BC24260FFA780041A18A /* ServicesViewController.swift */,
+				74A7BC2F261006A80041A18A /* ServiceCollectionViewCell.swift */,
+			);
+			path = ServicesView;
+			sourceTree = "<group>";
+		};
+		74A7BC28261004D60041A18A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				74A7BC29261004EA0041A18A /* ServiceEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		74A7BC3326101E790041A18A /* AllElementsViews */ = {
+			isa = PBXGroup;
+			children = (
+				74A7BC3426101E950041A18A /* AllElementsViewController.swift */,
+				74A7BC3A26101FEC0041A18A /* ElementCollectionViewCell.swift */,
+			);
+			path = AllElementsViews;
+			sourceTree = "<group>";
+		};
+		74A7BC3E261023F10041A18A /* ElementView */ = {
+			isa = PBXGroup;
+			children = (
+				74A7BC3F2610240A0041A18A /* ElementViewController.swift */,
+			);
+			path = ElementView;
 			sourceTree = "<group>";
 		};
 		E42F42C401200922BC19464B /* Frameworks */ = {
@@ -354,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74A7BAB2260F1A820041A18A /* Colors.xcassets in Resources */,
+				74A7BC1C260FEAF20041A18A /* Images.xcassets in Resources */,
 				74A7BAA3260F13890041A18A /* LaunchScreen.storyboard in Resources */,
 				74A7BAA0260F13890041A18A /* Assets.xcassets in Resources */,
 			);
@@ -416,22 +518,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				74A7BB8A260F69810041A18A /* ServiceProviderHeader.swift in Sources */,
+				74A7BC3526101E950041A18A /* AllElementsViewController.swift in Sources */,
 				74A7BAAE260F1A190041A18A /* CustomButton.swift in Sources */,
+				74A7BBDE260FD2E70041A18A /* Endpoints.swift in Sources */,
 				74A7BB64260F618D0041A18A /* ServiceForm.swift in Sources */,
 				74A7BB73260F68290041A18A /* ContentCategory.swift in Sources */,
 				74A7BB6A260F62A80041A18A /* ServiceFormElement.swift in Sources */,
-				74A7BAB5260F2E5F0041A18A /* FormTextField.swift in Sources */,
+				74A7BC5026103C4D0041A18A /* BookingFee.swift in Sources */,
+				74A7BBBB260F81FE0041A18A /* FormElementView.swift in Sources */,
+				74A7BBD2260FA3B10041A18A /* ElementsForm.swift in Sources */,
+				74A7BC4C26103C070041A18A /* ServiceRequest.swift in Sources */,
+				74A7BBE4260FD3AF0041A18A /* ServerService.swift in Sources */,
 				74A7BB6D260F64820041A18A /* ServiceElement.swift in Sources */,
-				74A7BA9B260F13830041A18A /* ViewController.swift in Sources */,
+				74A7BBFE260FDDFC0041A18A /* PickerView.swift in Sources */,
+				74A7BC25260FFA780041A18A /* ServicesViewController.swift in Sources */,
+				74A7BBC5260F8CF40041A18A /* DateView.swift in Sources */,
 				74A7BB67260F61C60041A18A /* ServiceFormPage.swift in Sources */,
-				74A7BB5F260F4EBA0041A18A /* UIViewExtesnsion.swift in Sources */,
 				74A7BB70260F66450041A18A /* ElementType.swift in Sources */,
 				74A7BB91260F76E90041A18A /* FormViewParser.swift in Sources */,
 				74A7BBA3260F7D450041A18A /* TextBoxView.swift in Sources */,
+				74A7BC402610240A0041A18A /* ElementViewController.swift in Sources */,
+				74A7BC30261006A80041A18A /* ServiceCollectionViewCell.swift in Sources */,
+				74A7BBC9260F8DB80041A18A /* TimeView.swift in Sources */,
 				74A7BB5B260F497D0041A18A /* WelcomeViewController.swift in Sources */,
 				74A7BA97260F13830041A18A /* AppDelegate.swift in Sources */,
+				74A7BC20260FF4FA0041A18A /* CustomNavigationBar.swift in Sources */,
+				74A7BC3B26101FEC0041A18A /* ElementCollectionViewCell.swift in Sources */,
 				74A7BA99260F13830041A18A /* SceneDelegate.swift in Sources */,
 				74A7BB9D260F7C960041A18A /* TextView.swift in Sources */,
+				74A7BC2A261004EA0041A18A /* ServiceEntity.swift in Sources */,
+				74A7BBCD260F8F5B0041A18A /* TelephoneView.swift in Sources */,
 				74A7BB98260F77590041A18A /* FormView.swift in Sources */,
 				74A7BB86260F69630041A18A /* ServiceRespond.swift in Sources */,
 			);

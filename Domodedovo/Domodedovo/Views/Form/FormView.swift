@@ -7,22 +7,39 @@
 
 import UIKit
 
-class FormView: UIView {
+class FormView: UIViewController {
     
     let titleLabel: UILabel = UILabel()
+    let nextButton: UIButton = UIButton()
+    private var elementForms: [ElementsForm]!
+    private var index = 0
     
-    init() {
-        super.init(frame: .zero)
-        setUp()
+    convenience init(elementForms: [ElementsForm]) {
+        self.init()
+        self.elementForms = elementForms
     }
     
-    private func setUp() {
+    override func viewDidLoad() {
+        view.backgroundColor = .white
         configureSubviews()
         addSubviews()
+        initConstraints()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        elementForms.first!.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(elementForms.first!)
+        NSLayoutConstraint.activate([
+            elementForms.first!.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10),
+            elementForms.first!.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 45),
+            elementForms.first!.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
+        ])
+        elementForms.first!.clipsToBounds = true
     }
     
     private func configureSubviews() {
         configureTitleLabel()
+        configureNextButton()
     }
     
     private func configureTitleLabel() {
@@ -31,24 +48,32 @@ class FormView: UIView {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
     }
     
+    private func configureNextButton() {
+        nextButton.translatesAutoresizingMaskIntoConstraints = false
+        nextButton.setTitle("Next", for: .normal)
+        nextButton.setTitleColor(.red, for: .normal)
+        nextButton.addTarget(self, action: #selector(nextElementForm), for: .touchUpInside)
+    }
+    
     private func addSubviews() {
-        addSubview(titleLabel)
+        view.addSubview(titleLabel)
+        view.addSubview(nextButton)
     }
     
     private func initConstraints() {
         NSLayoutConstraint.activate([
-            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 65),
-            titleLabel.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor)
+            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 65),
+            titleLabel.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor),
+            
+            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nextButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
         ])
     }
     
-    func addServiceFormView(_ view: UIView) {
-        
+    @objc func nextElementForm() {
+        UIView.animate(withDuration: 1) {
+            self.elementForms[self.index].frame.origin.x -= self.elementForms[self.index].frame.width + 100
+        }
     }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
 }

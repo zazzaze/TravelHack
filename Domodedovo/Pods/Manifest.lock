@@ -1,4 +1,6 @@
 PODS:
+  - Alamofire (5.4.1)
+  - DropDown (2.3.13)
   - MaterialComponents (124.1.1):
     - MaterialComponents/ActionSheet (= 124.1.1)
     - "MaterialComponents/ActionSheet+Theming (= 124.1.1)"
@@ -641,10 +643,14 @@ PODS:
   - MotionInterchange (3.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.4.1)
+  - DropDown
   - MaterialComponents (~> 124.1.1)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - DropDown
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
@@ -652,12 +658,14 @@ SPEC REPOS:
     - MotionInterchange
 
 SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   MaterialComponents: b9f58f24bf74588a83b2dce05802a11aaed5257d
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   MotionAnimator: 5f99d7c9592928c0f28a66283eda9c3b657dc480
   MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
 
-PODFILE CHECKSUM: edd990391db7f958430809efbf27356191d1846f
+PODFILE CHECKSUM: 8331e5fffb94386d8cd17c2b098457320831cdb8
 
 COCOAPODS: 1.10.1

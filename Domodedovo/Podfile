@@ -3,5 +3,7 @@
 
 target 'Domodedovo' do
 	use_frameworks!
-	pod 'MaterialComponents', '~>124.1.1'	
+	pod 'MaterialComponents', '~>124.1.1'
+  pod 'Alamofire', '~>5.4.1'
+  pod 'DropDown'
 end

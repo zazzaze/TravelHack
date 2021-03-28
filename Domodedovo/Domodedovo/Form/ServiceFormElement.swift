@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ServiceFormElement: Codable {
     var id: Int64
@@ -13,4 +14,11 @@ class ServiceFormElement: Codable {
     var subtitle: String?
     var serviceElements: [ServiceElement]
     var footerText: String?
+    
+    func createViewController() -> ElementViewController {
+        let vc = ElementViewController()
+        vc.titleLabel.text = title
+        vc.addView(FormViewParser().createElementView(for: self))
+        return vc
+    }
 }

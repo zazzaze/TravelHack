@@ -8,6 +8,6 @@
 import Foundation
 
 class ServiceRespond: Codable {
-    var serviceProviderHeader: ServiceProviderHeader?
-    var serviceFormPage: ServiceFormPage?
+    var serviceProviderHeader: ServiceProviderHeader
+    var serviceFormPage: ServiceFormPage
 }

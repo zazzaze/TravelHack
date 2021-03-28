@@ -8,22 +8,32 @@
 import UIKit
 import MaterialComponents.MaterialTextFields
 
-class TextBoxView: UIView {
+class TextBoxView: FormElementView {
 
     var textField = MDCOutlinedTextField()
     
-    init() {
-        super.init(frame: .zero)
+    override init(connectedElement: ServiceElement?) {
+        super.init(connectedElement: connectedElement)
         setUp()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
     
     private func setUp() {
         textField.sizeToFit()
-        textField.frame = frame
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.addAction(UIAction(handler: { _ in
+            self.connectedElement?.value = self.textField.text
+        }), for: .editingChanged)
+        textField.text = connectedElement?.value
         addSubview(textField)
+        NSLayoutConstraint.activate([
+            textField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5),
+            textField.leadingAnchor.constraint(equalTo: leadingAnchor),
+            textField.trailingAnchor.constraint(equalTo: trailingAnchor),
+            textField.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
     }
 }
